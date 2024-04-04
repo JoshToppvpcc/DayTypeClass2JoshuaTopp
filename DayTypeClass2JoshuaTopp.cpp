@@ -104,11 +104,13 @@ void DayType::addDay(int nDays)
 
 int main()
 {
+	
 	DayType today("Thursday");
 	cout << "The selected day is " << today.getDay();
 	cout << endl;
 	cout << "The day before " << today.getDay()<< " is " << today.prevDay() << endl;
 	cout << "The day after " << today.getDay()<< " is " << today.nextDay() << endl;
+	
 
 
 	return 0;
