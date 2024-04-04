@@ -104,6 +104,7 @@ void DayType::addDay(int nDays)
 
 int main()
 {
+
 	
 	DayType today("Thursday");
 	cout << "The selected day is " << today.getDay();
