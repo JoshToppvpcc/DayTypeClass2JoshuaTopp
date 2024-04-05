@@ -109,6 +109,11 @@ int main()
 
 	
 	DayType today("Thursday");
+	DayType defaultDay("sunday");
+	cout << "From default constructor : " << defaultDay.getDay() << endl;
+	cout << "The previous day is " << defaultDay.prevDay() << endl;
+	cout << "The day after is " << defaultDay.nextDay() << endl;
+
 	cout << "The selected day is " << today.getDay();
 	cout << endl;
 	cout << "The day before " << today.getDay()<< " is " << today.prevDay() << endl;
@@ -116,6 +121,9 @@ int main()
 	today.addDay(3); cout << endl;
 	today.addDay(30); cout << endl;
 	today.addDay(365); cout << endl;
+	
+	
+
 	
 
 
