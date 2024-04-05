@@ -1,6 +1,6 @@
 // DayTypeClass2JoshuaTopp.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-
+#include <string>
 #include <iostream>
 #include "DayType.h"
 using namespace std;
@@ -81,6 +81,7 @@ string DayType::prevDay() const
 
 }
 
+
 void DayType::addDay(int nDays)
 {
 	int num = nDays % 7; 
@@ -98,6 +99,7 @@ void DayType::addDay(int nDays)
 		index = index - 7;
 	}
 	weekDay = weekDays[index];
+	cout << "The day "<< nDays << " days after selected days is " << weekDay;
 }
 
 
@@ -110,7 +112,10 @@ int main()
 	cout << "The selected day is " << today.getDay();
 	cout << endl;
 	cout << "The day before " << today.getDay()<< " is " << today.prevDay() << endl;
-	cout << "The day after " << today.getDay()<< " is " << today.nextDay() << endl;
+	cout << "The day after " << today.getDay()<< " is " << today.nextDay() << endl; 
+	today.addDay(3); cout << endl;
+	today.addDay(30); cout << endl;
+	today.addDay(365); cout << endl;
 	
 
 
